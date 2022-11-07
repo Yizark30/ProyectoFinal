@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InformacionEmpresa">
+
+    <RelativeLayout
+        android:id="@+id/content_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:id="@+id/page_informacion_del_empleado_ek1"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <View
+                android:id="@+id/_bg__informacion_del_empleado_ek2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/_bg__informacion_del_empleado_ek2_shape" />
+
+            <View
+                android:id="@+id/rectangle_4_ek3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="200dp"
+                android:background="@drawable/rectangle_4_ek3_shape" />
+
+            <TextView
+                android:id="@+id/tvInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="76dp"
+                android:layout_marginEnd="30dp"
+                android:gravity="center"
+                android:text="Información personal de la empresa"
+                android:textColor="@color/vista_de_respuestas_color"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/_image_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="330dp"
+                android:layout_marginTop="660dp"
+                android:src="@drawable/_image_2" />
+
+            <ImageView
+                android:id="@+id/camara_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="160dp"
+                android:contentDescription="camara_1"
+                android:src="@drawable/camara_1" />
+
+            <ImageView
+                android:id="@+id/_flecha_1"
+                android:layout_width="28dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="7dp"
+                android:contentDescription="_flecha_1"
+                android:src="@drawable/_flecha_1" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
