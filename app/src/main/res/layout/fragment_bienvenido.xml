@@ -1,148 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragment_bienvenido">
 
-    <RelativeLayout
-        android:id="@+id/content_container"
+    <View
+        android:id="@+id/_bg__pantalla_de_bienvenida_ek2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints">
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/_bg__pantalla_de_bienvenida_ek2_shape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <RelativeLayout
-            android:id="@+id/page_pantalla_de_bienvenida_ek1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="0dp"
-            android:layout_marginTop="0dp">
+    <View
+        android:id="@+id/nombre_app_ek2"
+        android:layout_width="wrap_content"
+        android:layout_height="185dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/nombre_app_ek2_shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-            <View
-                android:id="@+id/_bg__pantalla_de_bienvenida_ek2"
-                android:layout_width="460dp"
-                android:layout_height="800dp"
-                android:layout_marginStart="0dp"
-                android:layout_marginTop="0dp"
-                android:background="@drawable/_bg__pantalla_de_bienvenida_ek2_shape" />
-
-
-            <RelativeLayout
-                android:id="@+id/contenedorencabezado_ek2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="0dp"
-                android:layout_marginTop="0dp">
-
-                <View
-                    android:id="@+id/nombre_app_ek2"
-                    android:layout_width="660dp"
-                    android:layout_height="185dp"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginTop="0dp"
-                    android:background="@drawable/nombre_app_ek2_shape" />
-
-                <ImageView
-                    android:id="@+id/i__1__1_ek2"
-                    android:layout_width="193dp"
-                    android:layout_height="164dp"
-                    android:layout_marginStart="110dp"
-                    android:layout_marginTop="6dp"
-                    android:contentDescription="i__1__1_ek2"
-                    android:src="@drawable/i__1__1_ek2" />
-
-            </RelativeLayout>
-
-            <View
-                android:id="@+id/login_container_ek2"
-                android:layout_width="360dp"
-                android:layout_height="490dp"
-                android:layout_marginStart="26dp"
-                android:layout_marginTop="144dp"
-                android:background="@drawable/login_container_ek2_shape" />
+    <ImageView
+        android:id="@+id/i__1__1_ek2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="i__1__1_ek2"
+        android:src="@drawable/i__1__1_ek2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
-            <RelativeLayout
-                android:id="@+id/group_11"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="71dp"
-                android:layout_marginTop="387dp">
+    <View
+        android:id="@+id/login_container_ek2"
+        android:layout_width="360dp"
+        android:layout_height="490dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/login_container_ek2_shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-                <Button
-                    android:id="@+id/btnCliente"
-                    android:layout_width="160dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="60dp"
-                    android:background="@drawable/rectangle_1_ek3_shape"
-                    android:text="Cliente"
-                    android:textAlignment="center"
-                    android:textStyle="bold" />
-
-
-            </RelativeLayout>
-
-
-            <RelativeLayout
-                android:id="@+id/group_10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="73dp"
-                android:layout_marginTop="567dp">
-
-                <View
-                    android:id="@+id/rectangle_1_ek3"
-                    android:layout_width="215dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginTop="0dp" />
-
-                <Button
-                    android:id="@+id/btnEmpresa"
-                    android:layout_width="160dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="60dp"
-                    android:background="@drawable/rectangle_1_ek3_shape"
-                    android:text="Cliente"
-                    android:textAlignment="center"
-                    android:textStyle="bold" />
+    <Button
+        android:id="@+id/btnCliente"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/rectangle_1_ek3_shape"
+        android:text="Cliente"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/personas_1" />
 
 
-            </RelativeLayout>
+    <Button
+        android:id="@+id/btnEmpresa"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/rectangle_1_ek3_shape"
+        android:text="Empresa"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/empresa_1" />
 
-            <TextView
-                android:id="@+id/__bienvenido_"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="110dp"
-                android:layout_marginTop="175dp"
-                android:layout_marginEnd="101dp"
-                android:text="Bienvenido"
-                android:textAlignment="center"
-                android:textColor="@color/login_color"
-                android:textSize="40sp"
-                android:textStyle="bold" />
 
-            <ImageView
-                android:id="@+id/personas_1"
-                android:layout_width="wrap_content"
-                android:layout_height="112dp"
-                android:layout_marginStart="160dp"
-                android:layout_marginTop="250dp"
-                android:contentDescription="personas_1"
-                android:src="@drawable/personas_1" />
+    <TextView
+        android:id="@+id/__bienvenido_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="175dp"
+        android:text="Bienvenido"
+        android:textAlignment="center"
+        android:textColor="@color/login_color"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
-                android:id="@+id/empresa_1"
-                android:layout_width="wrap_content"
-                android:layout_height="105dp"
-                android:layout_marginStart="160dp"
-                android:layout_marginTop="450dp"
-                android:contentDescription="empresa_1"
-                android:src="@drawable/empresa_1" />
+    <ImageView
+        android:id="@+id/personas_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:contentDescription="personas_1"
+        android:src="@drawable/personas_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/__bienvenido_" />
 
-        </RelativeLayout>
+    <ImageView
+        android:id="@+id/empresa_1"
+        android:layout_width="wrap_content"
+        android:layout_height="105dp"
+        android:layout_marginTop="60dp"
+        android:contentDescription="empresa_1"
+        android:src="@drawable/empresa_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btnCliente" />
 
-    </RelativeLayout>
 
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
